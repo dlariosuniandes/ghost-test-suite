@@ -1,0 +1,54 @@
+{
+    "url":"https://monitor177.github.io/color-palette/",
+    "browsers":["chromium", "webkit", "firefox"],
+    "options":{
+        "output": {
+            "errorColor": {
+                "red": 255,
+                "green": 0,
+                "blue": 255
+            },
+            "errorType": "movement",
+            "largeImageThreshold": 1200,
+            "useCrossOrigin": false,
+            "outputDiff": true
+        },
+        "scaleToSameSize": true,
+        "ignore": "antialiasing"
+    },
+    "viewportHeight":600, 
+    "viewportWidth":800,
+    "foldersForComparison" : [ 
+    {
+    "id" : "Scenario: Remove Tag",
+    "from": "../screenshots-kraken/ghost-3.3.0.scenario-06/",
+    "to": "../screenshots-kraken/ghost-3.42.5.scenario-06/",
+    "compared": "../screenshots-kraken/compared06/"
+    },
+    {
+    "id" : "Scenario: Change Password",
+    "from": "../screenshots-kraken/ghost-3.3.0.scenario-07/",
+    "to": "../screenshots-kraken/ghost-3.42.5.scenario-07/",
+    "compared": "../screenshots-kraken/compared07/"
+    },
+    {
+    "id" : "Scenario: Edit Page",
+    "from": "../screenshots-kraken/ghost-3.3.0.scenario-08/",
+    "to": "../screenshots-kraken/ghost-3.42.5.scenario-08/",
+    "compared": "../screenshots-kraken/compared08/"
+    },
+    {
+    "id" : "Scenario: Edit Post",
+    "from": "../screenshots-kraken/ghost-3.3.0.scenario-09/",
+    "to": "../screenshots-kraken/ghost-3.42.5.scenario-09/",
+    "compared": "../screenshots-kraken/compared09/"
+    },
+    {
+    "id" : "Scenario: Edit Tag",
+    "from": "../screenshots-kraken/ghost-3.3.0.scenario-10/",
+    "to": "../screenshots-kraken/ghost-3.42.5.scenario-10/",
+    "compared": "../screenshots-kraken/compared10/"
+    }
+    ],
+    "comparisonReport":"../screenshots-kraken/"
+}
