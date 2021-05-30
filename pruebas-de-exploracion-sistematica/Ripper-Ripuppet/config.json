@@ -1,0 +1,12 @@
+{
+    "url": "http://localhost:2369/ghost/",
+    "headless": true,
+    "depthLevels": 2,
+    "inputValues": true,
+    "values": {
+        "ember8":"d.larios@uniandes.edu.co",
+        "ember10":"uniandestest"
+    },
+        
+    "browsers": ["chromium"]
+}
