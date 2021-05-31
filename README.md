@@ -11,133 +11,131 @@ Este repositorio contiene un suite de pruebas y herramientas para probar la apli
 
 ## Escenarios probados
 
-| Id  | Escenario                                               | Tipo de Prueba      | Método de generación de datos |
-| :-- | :------------------------------------------------------ | :------------------ | ----------------------------- |
-| 001 | Crear Post                                              | E2E -API            | Aleatorio                     |
-| 002 | Create Tag                                              | E2E -API            | Aleatorio                     |
-| 003 | Delete Post                                             | E2E -API            | Aleatorio                     |
-| 004 | Create Page                                             | E2E -API            | Aleatorio                     |
-| 005 | Delete Page                                             | E2E -API            | Aleatorio                     |
-| 006 | Delete Tag                                              | E2E -API            | Aleatorio                     |
-| 007 | Change Password                                         | E2E -API            | Aleatorio                     |
-| 008 | Modify Page                                             | E2E -API            | Aleatorio                     |
-| 009 | Modify Post                                             | E2E-API             | Aleatorio                     |
-| 010 | Modify Tag                                              | E2E-API             | Aleatorio                     |
-| 011 | Create Post with Tag                                    | E2E -API            | Aleatorio                     |
-| 012 | Un-publish Post                                         | E2E -API            | Aleatorio                     |
-| 013 | Change Page Name                                        | E2E -API            | Aleatorio                     |
-| 014 | Search                                                  | E2E -API            | Aleatorio                     |
-| 015 | Search Page                                             | E2E -API            | Aleatorio                     |
-| 016 | Search Tag                                              | E2E -API            | Aleatorio                     |
-| 017 | Code Injection                                          | E2E -API            | Aleatorio                     |
-| 018 | Change Password Same Password                           | E2E -API            | Aleatorio                     |
-| 019 | Associate Tag                                           | E2E -API            | Aleatorio                     |
-| 020 | Create Post 255 Title                                   | E2E -API            | A priori                      |
-| 021 | Create Post Naughty                                     | E2E -API            | A priori                      |
-| 022 | Create Post 256                                         | E2E -API            | A priori                      |
-| 023 | Create Post 254                                         | E2E -API            | A priori                      |
-| 024 | Create Post 1999                                        | E2E -API            | A priori                      |
-| 025 | Create Post 2000                                        | E2E -API            | A priori                      |
-| 026 | Create Post 2001                                        | E2E -API            | A priori                      |
-| 027 | Create Tag 190                                          | E2E -API            | A priori                      |
-| 028 | Create Tag 191                                          | E2E -API            | A priori                      |
-| 029 | Create Tag 192                                          | E2E -API            | A priori                      |
-| 030 | Create Tag Naughty                                      | E2E -API            | A priori                      |
-| 031 | Create Page 254                                         | E2E -API            | A priori                      |
-| 032 | Create Page 255                                         | E2E -API            | A priori                      |
-| 033 | Create Page 256                                         | E2E -API            | A priori                      |
-| 034 | Create Page Naughty                                     | E2E -API            | A priori                      |
-| 035 | Create Page 1999                                        | E2E -API            | A priori                      |
-| 036 | Create Page 2000                                        | E2E -API            | A priori                      |
-| 037 | Create Page 2001                                        | E2E -API            | A priori                      |
-| 038 | Change Page Name 150                                    | E2E -API            | A priori                      |
-| 039 | Change Page Name 151                                    | E2E -API            | A priori                      |
-| 040 | Change Page Name 152                                    | E2E -API            | A priori                      |
-| 041 | Use bad email password recover                          | E2E -API            | A priori                      |
-| 042 | Use 64@190 email                                        | E2E -API            | Aleatorio                     |
-| 043 | Use 65@190 email                                        | E2E -API            | Aleatorio                     |
-| 044 | Use 64@191 email                                        | E2E -API            | Aleatorio                     |
-| 045 | Use non valid change email                              | E2E -API            | Aleatorio                     |
-| 046 | Use 64@190 change email                                 | E2E -API            | Aleatorio                     |
-| 047 | Use 65@ 190 change email                                | E2E -API            | Aleatorio                     |
-| 048 | Use 64@191 change email                                 | E2E -API            | Aleatorio                     |
-| 049 | Use short standard email                                | E2E -API            | Pool dinámico                 |
-| 050 | Use short standard email relogin                        | E2E -API            | Pool dinámico                 |
-| 051 | Change password long                                    | E2E -API            | Aleatorio                     |
-| 052 | Change password short                                   | E2E -API            | Aleatorio                     |
-| 053 | Change password space                                   | E2E -API            | Aleatorio                     |
-| 054 | Change password relogin long                            | E2E -API            | Aleatorio                     |
-| 055 | Write minimum reject password                           | E2E -API            | Aleatorio                     |
-| 056 | Write minimum approve password                          | E2E -API            | Aleatorio                     |
-| 057 | Relogin long password                                   | E2E -API            | Aleatorio                     |
-| 058 | Relogin minimum approve password                        | E2E -API            | Aleatorio                     |
-| 059 | Invite Staff Invalid email                              | E2E -API            | Aleatorio                     |
-| 060 | Invite Staff 64@190                                     | E2E -API            | Aleatorio                     |
-| 061 | Invite Staff 65@190                                     | E2E -API            | Aleatorio                     |
-| 062 | Invite Staff 64@191                                     | E2E -API            | Aleatorio                     |
-| 063 | Invite Staff duplicate email                            | E2E -API            | Aleatorio                     |
-| 064 | Invite Staff valid email                                | E2E -API            | Pool dinámico                 |
-| 065 | Revoke Invite                                           | E2E -API            | Aleatorio                     |
-| 066 | Change page name naughty                                | E2E -API            | Pool dinámico                 |
-| 067 | Login search post title 39                              | E2E -API            | Pool dinámico                 |
-| 068 | Login search post title 40                              | E2E -API            | Pool dinámico                 |
-| 069 | Login search post title 41                              | E2E -API            | Pool dinámico                 |
-| 070 | Login search post title naughty                         | E2E -API            | Pool dinámico                 |
-| 071 | Login search post title naughty                         | E2E -API            | Pool dinámico                 |
-| 072 | User profile,user-slug,slug,190,none,pass               | E2E- Estructurado   | Data Pool Escenario Aleatorio |
-| 073 | User profile,user-slug,slug,191,none,pass               | E2E- Estructurado   | Data Pool Escenario Aleatorio |
-| 074 | User profile,user-slug,slug,192,none,fail               | E2E- Estructurado   | Escenario Aleatorio           |
-| 075 | User profile,user-slug,slug,-1,only spaces,fail         | E2E- Estructurado   | Escenario Aleatorio           |
-| 076 | User profile,user-slug,slug,-1,none,pass                | E2E- Estructurado   | Escenario Aleatorio           |
-| 077 | User profile,user-email,email,190,none,pass             | E2E- Estructurado   | Escenario Aleatorio           |
-| 078 | User profile,user-email,email,191,none,pass             | E2E- Estructurado   | Escenario Aleatorio           |
-| 079 | User profile,user-email,email,192,none,fail             | E2E- Estructurado   | Escenario Aleatorio           |
-| 080 | User profile,user-email,email,-1,only spaces,fail       | E2E- Estructurado   | Escenario Aleatorio           |
-| 081 | User profile,user-email,email,-1,bad formed,fail        | E2E- Estructurado   | Escenario Aleatorio           |
-| 082 | User profile,user-email,email,-1,none,pass              | E2E- Estructurado   | Escenario Aleatorio           |
-| 083 | User profile,user-location,sentence,-1,none,pass        | E2E- Estructurado   | Escenario Aleatorio           |
-| 084 | User profile,user-website,url,1999,none,pass            | E2E- Estructurado   | Escenario Aleatorio           |
-| 086 | User profile,user-website,url,2001,none,fail            | E2E- Estructurado   | Escenario Aleatorio           |
-| 087 | User profile,user-website,url,-1,only spaces,fail       | E2E- Estructurado   | Escenario Aleatorio           |
-| 088 | User profile,user-website,url,-1,bad formed,fail        | E2E- Estructurado   | Escenario Aleatorio           |
-| 089 | User profile,user-website,url,-1,none,pass              | E2E- Estructurado   | Escenario Aleatorio           |
-| 090 | User profile,user-facebook,facebook,1999,none,pass      | E2E- Estructurado   | Escenario Aleatorio           |
-| 091 | User profile,user-facebook,facebook,2000,none,pass      | E2E- Estructurado   | Escenario Aleatorio           |
-| 092 | User profile,user-facebook,facebook,2001,none,fail      | E2E- Estructurado   | Escenario Aleatorio           |
-| 093 | User profile,user-facebook,facebook,-1,only spaces,fail | E2E- Estructurado   | Escenario Aleatorio           |
-| 094 | User profile,user-facebook,facebook,-1,bad formed,fail  | Escenario Aleatorio |
-| 095 | User profile,user-facebook,facebook,-1,none,pass        | E2E- Estructurado   | Escenario Aleatorio           |
-| 096 | User profile,user-twitter,twitter,1999,none,pass        | E2E- Estructurado   | Escenario Aleatorio           |
-| 097 | User profile,user-twitter,twitter,2000,none,pass        | E2E- Estructurado   | Escenario Aleatorio           |
-| 098 | User profile,user-twitter,twitter,2001,none,fail        | E2E- Estructurado   | Escenario Aleatorio           |
-| 099 | User profile,user-twitter,twitter,-1,only spaces,fail   | E2E- Estructurado   | Escenario Aleatorio           |
-| 100 | User profile,user-twitter,twitter,-1,bad formed,fail    | E2E- Estructurado   | Escenario Aleatorio           |
-| 101 | User profile,user-twitter,twitter,-1,none,pass          | E2E- Estructurado   | Escenario Aleatorio           |
-| 102 | User profile,user-bio,sentence,199,none,pass            | E2E- Estructurado   | Escenario Aleatorio           |
-| 103 | User profile,user-bio,sentence,200,none,pass            | E2E- Estructurado   | Escenario Aleatorio           |
-| 104 | User profile,user-bio,sentence,201,none,fail            | E2E- Estructurado   | Escenario Aleatorio           |
-| 105 | User profile,user-bio,sentence,-1,none,pass             | E2E- Estructurado   | Escenario Aleatorio           |
-| 106 | Create Post                                             | E2E- Estructurado   | Escenario Aleatorio           |
-| 107 | Create Tag                                              | E2E- Estructurado   | Escenario Aleatorio           |
-| 108 | Remove Post                                             | E2E- Estructurado   | Escenario Aleatorio           |
-| 109 | Create Page                                             | E2E- Estructurado   | Escenario Aleatorio           |
-| 110 | Remove Page                                             | E2E- Estructurado   | Escenario Aleatorio           |
-| 111 | Remove Tag                                              | E2E- Estructurado   | Escenario Aleatorio           |
-| 112 | Change Password                                         | E2E- Estructurado   | Escenario Aleatorio           |
-| 113 | Edit Page                                               | E2E- Estructurado   | Escenario Aleatorio           |
-| 114 | Edit Post                                               | E2E- Estructurado   | Escenario Aleatorio           |
-| 115 | Edit Tag                                                | E2E- Estructurado   | Escenario Aleatorio           |
-| 116 | Create Post with Tag                                    | E2E- Estructurado   | Escenario Aleatorio           |
-| 117 | Create Post and Un-publish                              | E2E- Estructurado   | Escenario Aleatorio           |
-| 118 | Change title and description                            | E2E- Estructurado   | Escenario Aleatorio           |
-| 119 | Search Post                                             | E2E- Estructurado   | Escenario Aleatorio           |
-| 120 | Search Page                                             | E2E- Estructurado   | Escenario Aleatorio           |
-| 121 | Search Tag                                              | E2E- Estructurado   | Escenario Aleatorio           |
-| 121 | Change user name                                        | E2E- Estructurado   | Escenario Aleatorio           |
-| 122 | Change password                                         | E2E- Estructurado   | Escenario Aleatorio           |
-| 123 | Link tag with post                                      | E2E- Estructurado   | Escenario Aleatorio           |
-| 124 | Add new main menu entry                                 | E2E- Estructurado   | Escenario Aleatorio           |
-
+| Id  | Escenario                                               | Tipo de Prueba      | Método de generación de datos | Herramienta | Ubicación |
+| --- | ------------------------------------------------------- | ------------------- | ----------------------------- | ----------- | --------- |
+|1| Crear Post                                              | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/1-login-create-post.spec.ts|
+|2| Create Tag                                              | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/2-login-create-tag.spec.ts|
+|3| Delete Post                                             | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/3-login-delete-post.spec.ts|
+|4| Create Page                                             | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/4-login-create-page.spec.ts|
+|5| Delete Page                                             | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/5-login-delete-page.spec.ts|
+|6| Delete Tag                                              | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/6-login-tag-delete.spec.ts|
+|7| Change Password                                         | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/7-login-change-password.spec.ts|
+|8| Modify Page                                             | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/8-login-modify-page.spec.ts|
+|9| Modify Post                                             | E2E-API             | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/9-login-modify-post.spec.ts|
+|10| Modify Tag                                              | E2E-API             | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/10-login-modify-tag.spec.ts|
+|11| Create Post with Tag                                    | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/11-login-create-post-tag.spec.ts|
+|12| Un-publish Post                                         | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/12-unpublish-post.spec.ts|
+|13| Change Page Name                                        | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/13-change-page-name.spec.ts|
+|14| Search                                                  | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/14-login-search.spec.ts|
+|15| Search Page                                             | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/15-login-search-page.spec.ts|
+|16| Search Tag                                              | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/16-login-search-tag.spec.ts|
+|17| Code Injection                                          | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/17-code-injection.spec.ts|
+|18| Change Password Same Password                           | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/18-same-password.spec.ts|
+|19| Associate Tag                                           | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/19-login-tag-post-associate.spec.ts|
+|20| Create Post 255 Title                                   | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/20-login-create-post-255.spec.ts|
+|21| Create Post Naughty                                     | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/21-login-create-post-naughty.spec.ts|
+|22| Create Post 256                                         | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/22-login-create-post-256.spec.ts|
+|23| Create Post 254                                         | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/23-login-create-post-254.spec.ts|
+|24| Create Post 1999                                        | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/24-login-create-post-1999.spec.ts|
+|25| Create Post 2000                                        | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/25-login-create-post-2000.spec.ts|
+|26| Create Post 2001                                        | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/26-login-create-post-2001.spec.ts|
+|27| Create Tag 190                                          | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/27-login-create-tag-190.spec.ts|
+|28| Create Tag 191                                          | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/28-login-create-tag-191.spec.ts|
+|29| Create Tag 192                                          | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/29-login-create-tag-192.spec.ts|
+|30| Create Tag Naughty                                      | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/30-login-create-tag-naughty.spec.ts|
+|31| Create Page 254                                         | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/31-login-create-page_254.spec.ts|
+|32| Create Page 255                                         | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/32-login-create-page_255.spec.ts|
+|33| Create Page 256                                         | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/33-login-create-page_256.spec.ts|
+|34| Create Page Naughty                                     | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/34-login-create-page_naughty.spec.ts|
+|35| Create Page 1999                                        | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/35-login-create-page_1999.spec.ts|
+|36| Create Page 2000                                        | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/36-login-create-page_2000.spec.ts|
+|37| Create Page 2001                                        | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/37-login-create-page_2001.spec.ts|
+|38| Change Page Name 150                                    | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/38-change-page-name-150.spec.ts|
+|39| Change Page Name 151                                    | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/39-change-page-name-151.spec.ts|
+|40| Change Page Name 152                                    | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/40-change-page-name-152.spec.ts|
+|41| Use bad email password recover                          | E2E -API            | A priori                      | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/41-use-bad-email-password-recover.spec.ts|
+|42| Use 64@190 email                                        | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/42-use-64@190-non-existing-user.spec.ts|
+|43| Use 65@190 email                                        | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/43-use-65@190-non-existing-user.spec.ts|
+|44| Use 64@191 email                                        | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/44-use-64@191-non-existing-user.spec.ts|
+|45| Use non valid change email                              | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/45-use-non-valid-change-email.spec.ts|
+|46| Use 64@190 change email                                 | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/46-use-64@190-change-email.spec.ts|
+|47| Use 65@ 190 change email                                | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/47-use-65@190-change-email.spec.ts|
+|48| Use 64@191 change email                                 | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/48-use-64@191-change-email.spec.ts|
+|49| Use short standard email                                | E2E -API            | Pool dinámico                 | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/49-short-standard-email.spec.ts|
+|50| Use short standard email relogin                        | E2E -API            | Pool dinámico                 | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/50-short-standard-email-reloggin.spec.ts|
+|51| Change password long                                    | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/51-change-password-long-password.spec.ts|
+|52| Change password short                                   | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/52-change-password-short.spec.ts|
+|53| Change password space                                   | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/53-change-password-use-space.spec.ts|
+|54| Change password relogin long                            | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/54-change-password-relogin-long-password.spec.ts|
+|55| Write minimum reject password                           | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/55-write-minimum-reject-password.spec.ts|
+|56| Write minimum approve password                          | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/56-write-minimum-approve-password.spec.ts|
+|57| Relogin long password                                   | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/57-relogging-with-long-password.spec.ts|
+|58| Relogin minimum approve password                        | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/58-relogging-with-minimum-approve-password.spec.ts|
+|59| Invite Staff Invalid email                              | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/59-invite-staff-invalid-email.spec.ts|
+|60| Invite Staff 64@190                                     | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/60-invite-staff-64@190-email.spec.ts|
+|61| Invite Staff 65@190                                     | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/61-invite-staff-65@190-email.spec.ts|
+|62| Invite Staff 64@191                                     | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/62-invite-staff-64@191-email.spec.ts|
+|63| Invite Staff duplicate email                            | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/63-invite-staff-duplicate-email.spec.ts|
+|64| Invite Staff valid email                                | E2E -API            | Pool dinámico                 | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/64-invite-staff-valid-email.spec.ts|
+|65| Revoke Invite                                           | E2E -API            | Aleatorio                     | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/65-revoke-invite.spec.ts|
+|66| Change page name naughty                                | E2E -API            | Pool dinámico                 | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/66-change-page-name-naugthy.spec.ts|
+|67| Login search post title 39                              | E2E -API            | Pool dinámico                 | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/67-login-search-post-title39.spec.ts|
+|68| Login search post title 40                              | E2E -API            | Pool dinámico                 | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/68-login-search-post-title40.spec.ts|
+|69| Login search post title 41                              | E2E -API            | Pool dinámico                 | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/69-login-search-post-title41.spec.ts|
+|70| Login search post title naughty                         | E2E -API            | Pool dinámico                 | Cypress     |ghost-test-suite/pruebas-end-to-end/pruebas-api-cypress/cypress_ghost_3.42.5/cypress/integration/70-login-search-post-title-naugthy.ts|
+|72|Cambiar slug de usuario            | E2E- Estructurado   | Data Pool Escenario Aleatorio |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|73|Cambiar el slug de un usuario usando 190 caracteres| E2E- Estructurado   | Data Pool Escenario Aleatorio |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|74|Cambiar el slug de un usuario usando 191 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|75|Cambiar el slug de un usuario usando 192 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|76|Cambiar el slug con sólo espacios de longitud variable| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|77|Cambiar correo electrónico de usuario| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|78|Cambiar el correo electrónico de un usuario usando 190 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|79|Cambiar el correo electrónico de un usuario usando 191 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|80|Cambiar el correo electrónico de un usuario usando 192 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|81|Cambiar el correo electrónico con sólo espacios de longitud variable| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|82|Cambiar el correo electrónico con valor mal formado| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|83|Cambiar ubicación de usuario| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|84|Cambiar sitio Web de usuario| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|86|Cambiar el sitio Web de un usuario usando 1999 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|87|Cambiar el sitio Web de un usuario usando 2000 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|88|Cambiar el sitio Web de un usuario usando 2001 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|89|Cambiar el sitio Web con sólo espacios de longitud variable| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|90|Cambiar el sitio Web con valor mal formado| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|91|Cambiar el Facebook de un usuario usando 2000 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|92|Cambiar el Facebook de un usuario usando 2001 caracteres | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|93|Cambiar el Facebook con sólo espacios de longitud variable| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|94|Cambiar el Facebook con valor mal formado| Escenario Aleatorio ||Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|95|Cambiar Twitter de usuario| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|96|Cambiar el Twitter de un usuario usando 1999 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|97|Cambiar el Twitter de un usuario usando 2000 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|98|Cambiar el Twitter de un usuario usando 2001 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|99|Cambiar el Twitter con sólo espacios de longitud variable| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|100|Cambiar el Twitter con valor mal formado| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|101| Perfil usuario twitter sin password          | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|102|Cambiar bio de un usuario usando 199 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|103|Cambiar bio de un usuario usando 200 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|104|Cambiar bio de un usuario usando 201 caracteres| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|105|Bio de un usuario sin password| E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost_user_profile_form.feature|
+|106| Create Post                                             | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost01.feature|
+|107| Create Tag                                              | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost02.feature|
+|108| Remove Post                                             | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost03.feature|
+|109| Create Page                                             | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost04.feature|
+|110| Remove Page                                             | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost05.feature|
+|111| Remove Tag                                              | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost06.feature|
+|112| Change Password                                         | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost07.feature|
+|113| Edit Page                                               | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost08.feature|
+|114| Edit Post                                               | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost09.feature|
+|115| Edit Tag                                                | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost10.feature|
+|116| Create Post with Tag                                    | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost11.feature|
+|117| Create Post and Un-publish                              | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost12.feature|
+|118| Change title and description                            | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost13.feature|
+|119| Search Post                                             | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost14.feature|
+|120| Search Page                                             | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost15.feature|
+|121| Search Tag                                              | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost16.feature|
+|121| Change user name                                        | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost17.feature|
+|122| Change password                                         | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost18.feature|
+|123| Link tag with post                                      | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost19.feature|
+|124| Add new main menu entry                                 | E2E- Estructurado   | Escenario Aleatorio           |Kraken|ghost-test-suite/pruebas-end-to-end/pruebas-lenguaje-estructurado-kraken/kraken_ghost_3.42.5_sshot/features/ghost20.feature|
 - La explicación de los escenarios ejecutados con Kraken se realiza de manera detallada en el apartado de Estrategia
 
 ## Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.
