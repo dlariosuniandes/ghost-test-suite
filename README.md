@@ -1,3 +1,7 @@
+# Presentación estrategia de pruebas
+
+https://youtu.be/S8V9Tpkh_G0
+
 # Test de Suite de Pruebas para Ghost en su version 3.42.5
 
 Este repositorio contiene un suite de pruebas y herramientas para probar la aplicación web de Ghost. Dentro de Cada carpeta se encuentra el archivo readme que le indicara cómo ejecutar correctamente cada suite.
